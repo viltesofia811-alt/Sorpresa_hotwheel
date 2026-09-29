@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Para mi piloto ❤️</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,sans-serif}
+body{background:#080808;color:#fff;overflow-x:hidden}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px;position:relative;
+background:radial-gradient(circle at 50% 20%,#3a0d0d 0,#120808 35%,#080808 70%)}
+.page:before{content:"";position:absolute;inset:0;opacity:.14;background:repeating-linear-gradient(135deg,transparent 0 35px,#fff 35px 39px,transparent 39px 74px)}
+.card{position:relative;width:min(620px,100%);padding:30px 22px;border-radius:28px;background:rgba(13,13,13,.95);border:1px solid #3d3d3d;box-shadow:0 18px 70px #000;text-align:center}
+.badge{font-size:11px;letter-spacing:3px;color:#ff4545;font-weight:800}
+.car{font-size:76px;margin:15px 0;animation:move 2.5s ease-in-out infinite}
+@keyframes move{50%{transform:translateX(10px) rotate(2deg)}}
+h1{font-size:clamp(38px,11vw,62px);line-height:.95;margin:8px 0 15px}
+h2{font-size:30px;margin:8px 0 14px}.red{color:#ff3b3b}
+p{color:#ddd;line-height:1.6;font-size:17px}
+button{margin-top:12px;padding:16px 24px;border:0;border-radius:999px;background:#ff3030;color:#fff;font-weight:800;font-size:16px;box-shadow:0 9px 28px #ff303044}
+button:active{transform:scale(.97)}
+#gift{display:none}.msg{margin-top:20px;padding:20px;border-left:4px solid #ff3030;background:#171717;border-radius:14px;text-align:left}
+.photo{margin:20px 0;padding:28px 15px;border:2px dashed #555;border-radius:18px;color:#aaa}
+.footer{margin-top:25px;color:#777;font-size:13px}.heart{font-size:25px}
+</style>
+</head>
+<body>
+<main class="page">
+<section class="card" id="inicio">
+<div class="badge">PARA MI PILOTO FAVORITO</div>
+<div class="car">🏎️</div>
+<h1>HOLA, MI AMOR ❤️</h1>
+<p>Te preparé una pequeña sorpresa por el día de regalar Hot Wheels.</p>
+<p>Como estamos a distancia, encontré una forma de acercarte un regalito aunque sea desde mi celu. 🥹</p>
+<button id="abrir">🏁 ABRIR MI REGALO</button>
+</section>
+
+<section class="card" id="regalo">
+<div class="badge">MISIÓN COMPLETADA 🏁</div>
+<div class="car">🏎️</div>
+<h2>Este regalito es para vos ❤️</h2>
+<div class="msg">
+<strong class="red">Para vos:</strong><br><br>
+Feliz día de Hot Wheels, mi amor. ❤️<br><br>
+Quería hacerte algo especial porque, aunque estemos lejos, quería encontrar una manera de estar presente en este día.
+<br><br>
+Capaz este regalo entra en una pantalla y no en tus manos, pero está hecho con muchísimo amor. Ojalá pronto pueda darte un regalo de verdad, abrazarte y compartirlo juntos.
+<br><br>
+Mientras tanto, guardá esta pequeña sorpresa y acordate de que, aunque haya kilómetros de por medio, siempre hay una personita pensando en vos. 🥹❤️
+</div>
+<div class="photo">📸<br><br><strong>ACÁ PODÉS PONER UNA FOTO DE USTEDES</strong><br><br>Este espacio queda listo para personalizarlo.</div>
+<div class="heart">❤️ 🏎️ ❤️</div>
+<p>La distancia puede separar dos lugares, pero no dos corazones.</p>
+<div class="footer">Hecho especialmente para vos<br>Tu copilota favorita 🏁❤️</div>
+</section>
+</main>
+<script>
+document.getElementById("abrir").addEventListener("click",function(){
+ document.getElementById("inicio").style.display="none";
+ document.getElementById("regalo").style.display="block";
+ window.scrollTo(0,0);
+});
+</script>
+</body>
+</html>
