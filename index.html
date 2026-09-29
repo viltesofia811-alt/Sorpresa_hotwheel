@@ -2,64 +2,310 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Para mi piloto ❤️</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Para mi piloto favorito ❤️</title>
+
 <style>
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,sans-serif}
-body{background:#080808;color:#fff;overflow-x:hidden}
-.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px;position:relative;
-background:radial-gradient(circle at 50% 20%,#3a0d0d 0,#120808 35%,#080808 70%)}
-.page:before{content:"";position:absolute;inset:0;opacity:.14;background:repeating-linear-gradient(135deg,transparent 0 35px,#fff 35px 39px,transparent 39px 74px)}
-.card{position:relative;width:min(620px,100%);padding:30px 22px;border-radius:28px;background:rgba(13,13,13,.95);border:1px solid #3d3d3d;box-shadow:0 18px 70px #000;text-align:center}
-.badge{font-size:11px;letter-spacing:3px;color:#ff4545;font-weight:800}
-.car{font-size:76px;margin:15px 0;animation:move 2.5s ease-in-out infinite}
-@keyframes move{50%{transform:translateX(10px) rotate(2deg)}}
-h1{font-size:clamp(38px,11vw,62px);line-height:.95;margin:8px 0 15px}
-h2{font-size:30px;margin:8px 0 14px}.red{color:#ff3b3b}
-p{color:#ddd;line-height:1.6;font-size:17px}
-button{margin-top:12px;padding:16px 24px;border:0;border-radius:999px;background:#ff3030;color:#fff;font-weight:800;font-size:16px;box-shadow:0 9px 28px #ff303044}
-button:active{transform:scale(.97)}
-#gift{display:none}.msg{margin-top:20px;padding:20px;border-left:4px solid #ff3030;background:#171717;border-radius:14px;text-align:left}
-.photo{margin:20px 0;padding:28px 15px;border:2px dashed #555;border-radius:18px;color:#aaa}
-.footer{margin-top:25px;color:#777;font-size:13px}.heart{font-size:25px}
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  background:#080808;
+  color:white;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+.page{
+  min-height:100vh;
+  padding:18px 12px 35px;
+  display:flex;
+  justify-content:center;
+  background:
+    radial-gradient(circle at 20% 10%,#4a1010,transparent 30%),
+    #080808;
+}
+
+.card{
+  width:min(100%,520px);
+  background:linear-gradient(145deg,#191919,#0c0c0c);
+  border:1px solid #333;
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 20px 60px #000;
+}
+
+.top{
+  text-align:center;
+  padding:28px 20px 22px;
+  background:linear-gradient(#380b0b,transparent);
+}
+
+.small{
+  font-size:11px;
+  letter-spacing:3px;
+  color:#ff5555;
+  font-weight:800;
+}
+
+.car{
+  font-size:62px;
+  margin:12px 0;
+}
+
+h1{
+  font-size:clamp(40px,12vw,58px);
+  line-height:.92;
+  margin:8px 0 12px;
+  font-weight:900;
+  letter-spacing:-2px;
+}
+
+.heart{
+  font-size:38px;
+}
+
+.subtitle{
+  font-size:17px;
+  line-height:1.55;
+  color:#ddd;
+  max-width:390px;
+  margin:auto;
+}
+
+.message{
+  margin:10px 16px 18px;
+  padding:22px 18px;
+  border-left:3px solid #ff3030;
+  background:#ffffff0b;
+  border-radius:0 18px 18px 0;
+}
+
+.message p{
+  font-size:16px;
+  line-height:1.65;
+  color:#eee;
+  margin:0 0 15px;
+}
+
+.message p:last-child{
+  margin:0;
+}
+
+.gift{
+  margin:16px;
+  padding:22px;
+  border-radius:22px;
+  background:linear-gradient(135deg,#291010,#130909);
+  border:1px solid #552020;
+  text-align:center;
+}
+
+.gift-title{
+  font-size:11px;
+  letter-spacing:3px;
+  color:#ff6868;
+  font-weight:800;
+}
+
+.hotwheels{
+  font-size:54px;
+  margin:10px;
+}
+
+h2{
+  font-size:25px;
+  margin:7px 0;
+}
+
+.gift p{
+  color:#ccc;
+  line-height:1.5;
+}
+
+button{
+  width:100%;
+  max-width:330px;
+  padding:16px;
+  border:0;
+  border-radius:999px;
+  background:linear-gradient(135deg,#ff3030,#ad0000);
+  color:white;
+  font-size:16px;
+  font-weight:800;
+  box-shadow:0 10px 25px #f003;
+}
+
+.reveal{
+  display:none;
+  margin-top:18px;
+}
+
+.reveal.show{
+  display:block;
+}
+
+.reveal-box{
+  padding:20px;
+  border-radius:18px;
+  background:#f5f5f5;
+  color:#151515;
+}
+
+.reveal-box .emoji{
+  font-size:42px;
+}
+
+.reveal-box h3{
+  font-size:23px;
+  margin:8px;
+}
+
+.reveal-box p{
+  color:#333;
+  line-height:1.6;
+}
+
+.footer{
+  text-align:center;
+  color:#777;
+  font-size:12px;
+  padding:3px 20px 22px;
+}
 </style>
 </head>
+
 <body>
-<main class="page">
-<section class="card" id="inicio">
-<div class="badge">PARA MI PILOTO FAVORITO</div>
-<div class="car">🏎️</div>
-<h1>HOLA, MI AMOR ❤️</h1>
-<p>Te preparé una pequeña sorpresa por el día de regalar Hot Wheels.</p>
-<p>Como estamos a distancia, encontré una forma de acercarte un regalito aunque sea desde mi celu. 🥹</p>
-<button id="abrir">🏁 ABRIR MI REGALO</button>
+
+<div class="page">
+
+<main class="card">
+
+<section class="top">
+
+<div class="small">
+PARA MI PILOTO FAVORITO
+</div>
+
+<div class="car">
+🏎️
+</div>
+
+<h1>
+HOLA,<br>
+MI AMOR
+</h1>
+
+<div class="heart">
+❤️
+</div>
+
+<p class="subtitle">
+Te preparé una pequeña sorpresa por el día de regalar Hot Wheels.
+</p>
+
 </section>
 
-<section class="card" id="regalo">
-<div class="badge">MISIÓN COMPLETADA 🏁</div>
-<div class="car">🏎️</div>
-<h2>Este regalito es para vos ❤️</h2>
-<div class="msg">
-<strong class="red">Para vos:</strong><br><br>
-Feliz día de Hot Wheels, mi amor. ❤️<br><br>
-Quería hacerte algo especial porque, aunque estemos lejos, quería encontrar una manera de estar presente en este día.
-<br><br>
-Capaz este regalo entra en una pantalla y no en tus manos, pero está hecho con muchísimo amor. Ojalá pronto pueda darte un regalo de verdad, abrazarte y compartirlo juntos.
-<br><br>
-Mientras tanto, guardá esta pequeña sorpresa y acordate de que, aunque haya kilómetros de por medio, siempre hay una personita pensando en vos. 🥹❤️
-</div>
-<div class="photo">📸<br><br><strong>ACÁ PODÉS PONER UNA FOTO DE USTEDES</strong><br><br>Este espacio queda listo para personalizarlo.</div>
-<div class="heart">❤️ 🏎️ ❤️</div>
-<p>La distancia puede separar dos lugares, pero no dos corazones.</p>
-<div class="footer">Hecho especialmente para vos<br>Tu copilota favorita 🏁❤️</div>
+
+<section class="message">
+
+<p>
+<strong>Feliz día de Hot Wheels, mi amor. ❤️</strong>
+</p>
+
+<p>
+Quería hacerte algo especial porque, aunque estemos a distancia, quería encontrar una manera de estar presente en este día.
+</p>
+
+<p>
+Capaz este regalo entra en una pantalla y no en tus manos, pero está hecho con muchísimo amor.
+</p>
+
+<p>
+Ojalá pronto pueda darte un regalo de verdad, abrazarte y compartirlo juntos. ❤️
+</p>
+
 </section>
+
+
+<section class="gift">
+
+<div class="gift-title">
+TU SORPRESA
+</div>
+
+<div class="hotwheels">
+🏎️✨
+</div>
+
+<h2>
+Hay un regalito para vos
+</h2>
+
+<p>
+Pero primero tenés que abrirlo...
+</p>
+
+<button id="btn" onclick="abrirRegalo()">
+🎁 ABRIR MI REGALO
+</button>
+
+
+<div class="reveal" id="reveal">
+
+<div class="reveal-box">
+
+<div class="emoji">
+🏎️❤️
+</div>
+
+<h3>
+Para vos
+</h3>
+
+<p>
+Este pequeño detalle es para recordarte que, aunque haya kilómetros de por medio, podemos hacer especial este día.
+</p>
+
+<p>
+<strong>
+Feliz día de Hot Wheels, mi piloto favorito. ❤️
+</strong>
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<div class="footer">
+Hecho especialmente para vos ❤️
+</div>
+
 </main>
+
+</div>
+
+
 <script>
-document.getElementById("abrir").addEventListener("click",function(){
- document.getElementById("inicio").style.display="none";
- document.getElementById("regalo").style.display="block";
- window.scrollTo(0,0);
-});
+
+function abrirRegalo(){
+
+document
+.getElementById("reveal")
+.classList
+.add("show");
+
+document
+.getElementById("btn")
+.textContent="❤️ SORPRESA ABIERTA";
+
+}
+
 </script>
+
 </body>
 </html>
