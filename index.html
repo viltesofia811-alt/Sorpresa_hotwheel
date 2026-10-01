@@ -1,289 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Para mi piloto favorito ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para mi gordito 💙</title>
 
 <style>
-*{
-  box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
-body{
-  margin:0;
-  color:white;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background:#0757a8;
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dff6ff, #8ed8ff, #4aa9e8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    overflow: hidden;
 }
 
-/* FONDO DE CARRERA */
-.page{
-  min-height:100vh;
-  padding:18px 12px 35px;
-  display:flex;
-  justify-content:center;
-  background:
-    linear-gradient(45deg,#ffffff 25%,transparent 25%) 0 0/42px 42px,
-    linear-gradient(-45deg,#ffffff 25%,transparent 25%) 0 0/42px 42px,
-    linear-gradient(45deg,transparent 75%,#ffffff 75%) 0 0/42px 42px,
-    linear-gradient(-45deg,transparent 75%,#ffffff 75%) 0 0/42px 42px,
-    #111;
+body::before {
+    content: "🏎️  🩵  🏁  💙  🏎️  🩵  🏁";
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    opacity: 0.8;
 }
 
-/* TARJETA */
-.card{
-  width:min(100%,520px);
-  background:linear-gradient(180deg,#0878d1,#034b91);
-  border:5px solid #ffd900;
-  border-radius:28px;
-  overflow:hidden;
-  box-shadow:0 12px 35px #000;
+.carta {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 5px solid #1677b9;
+    border-radius: 30px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 80, 140, 0.3);
 }
 
-/* PARTE SUPERIOR */
-.top{
-  text-align:center;
-  padding:25px 18px 28px;
-  background:
-    radial-gradient(circle at 50% 30%,#168fe8,transparent 45%),
-    #0757a8;
-  border-bottom:5px solid #ffd900;
+h1 {
+    color: #075b96;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-.small{
-  font-size:12px;
-  letter-spacing:3px;
-  color:#ffd900;
-  font-weight:900;
-  text-shadow:3px 3px 0 #0757a8;
+p {
+    color: #174b6b;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* LETRAS PRINCIPALES */
-h1{
-  font-size:clamp(44px,13vw,66px);
-  line-height:.88;
-  margin:12px 0;
-  font-weight:1000;
-  letter-spacing:-3px;
-  color:#ffd900;
-  text-shadow:
-    4px 4px 0 #0757a8,
-    7px 7px 0 #032e5c;
+.corazon {
+    font-size: 45px;
+    margin: 10px;
 }
 
-.heart{
-  font-size:38px;
-  margin:8px;
+button {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #087ac1, #49bfff);
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0, 90, 150, 0.3);
 }
 
-.subtitle{
-  font-size:17px;
-  line-height:1.5;
-  color:white;
-  font-weight:700;
-  max-width:390px;
-  margin:auto;
+button:active {
+    transform: scale(0.96);
 }
-
-/* AUTITO */
-.car{
-  font-size:68px;
-  margin:10px 0;
-  filter:drop-shadow(4px 5px 0 #032e5c);
-}
-
-/* BANDERAS */
-.flags{
-  font-size:27px;
-  margin:8px 0;
-  letter-spacing:5px;
-}
-
-/* MENSAJE */
-.message{
-  margin:18px 16px;
-  padding:22px 18px;
-  background:#0869bd;
-  border:3px solid #ffd900;
-  border-radius:20px;
-  box-shadow:0 7px 0 #032e5c;
-}
-
-.message p{
-  font-size:16px;
-  line-height:1.65;
-  color:white;
-  margin:0 0 15px;
-}
-
-.message p:last-child{
-  margin:0;
-}
-
-.message strong{
-  color:#ffd900;
-  font-size:18px;
-  text-shadow:2px 2px 0 #0757a8;
-}
-
-/* SORPRESA */
-.gift{
-  margin:18px 16px 22px;
-  padding:24px 18px;
-  border-radius:22px;
-  background:#ffd900;
-  color:#0757a8;
-  border:4px solid white;
-  text-align:center;
-  box-shadow:0 8px 0 #032e5c;
-}
-
-.gift-title{
-  font-size:12px;
-  letter-spacing:3px;
-  color:#0757a8;
-  font-weight:1000;
-}
-
-.hotwheels{
-  font-size:58px;
-  margin:10px;
-  filter:drop-shadow(3px 3px 0 white);
-}
-
-h2{
-  font-size:27px;
-  margin:8px 0;
-  font-weight:1000;
-  text-shadow:2px 2px 0 white;
-}
-
-.gift p{
-  color:#0757a8;
-  font-weight:700;
-  line-height:1.5;
-}
-
-/* BOTÓN */
-.open-button{
-  display:inline-block;
-  width:100%;
-  max-width:330px;
-  padding:17px;
-  border-radius:999px;
-  background:#0757a8;
-  color:#ffd900;
-  font-size:17px;
-  font-weight:1000;
-  text-decoration:none;
-  border:3px solid white;
-  box-shadow:0 6px 0 #032e5c;
-}
-
-/* DECORACIÓN */
-.wheels{
-  text-align:center;
-  font-size:28px;
-  letter-spacing:8px;
-  margin:5px 0 12px;
-}
-
-/* PIE */
-.footer{
-  text-align:center;
-  color:white;
-  font-size:12px;
-  font-weight:700;
-  padding:3px 20px 22px;
-}
-
 </style>
 </head>
 
 <body>
 
-<div class="page">
+<div class="carta">
 
-<main class="card">
+    <div class="corazon">💙</div>
 
-<section class="top">
+    <h1>Feliz día de Hot Wheels, mi amor 🏎️</h1>
 
-<div class="small">
-🏁 PARA MI PILOTO FAVORITO 🏁
-</div>
+    <p>
+        Quería hacerte algo especial porque, aunque estemos a distancia,
+        quería encontrar una manera de estar presente en este día.
+    </p>
 
-<div class="flags">
-🏁 🏎️ 🏁
-</div>
-
-<div class="car">
-🏎️
-</div>
-
-<h1>
-HOLA,<br>
-MI AMOR
-</h1>
-
-<div class="heart">
-❤️
-</div>
-
-<p class="subtitle">
-Te preparé una pequeña sorpresa por el día de regalar Hot Wheels.
-</p>
-
-</section>
-
-
-<section class="message">
-
-<p>
-<strong>Feliz día de Hot Wheels, mi amor. ❤️</strong>
-</p>
-
-<p>
-Quería hacerte algo especial porque, aunque estemos a distancia, quería encontrar una manera de estar presente en este día.
-</p>
-
-</section>
-
-
-<section class="gift">
-
-<div class="gift-title">
-🏁 TU SORPRESA 🏁
-</div>
-
-<div class="hotwheels">
-🏎️✨
-</div>
-
-<h2>
-Hay un regalito para vos
-</h2>
-
-<p>
-Pero primero tenés que abrirlo...
-</p>
-
-<a href="carta.html" class="open-button">
-💌 ABRIR MI SORPRESA
-</a>
-
-<div class="wheels">
-⚫ 🛞 ⚫
-</div>
-
-</section>
-
-
-<div class="footer">
-Hecho especialmente para vos ❤️
-</div>
-
-</main>
+    <button onclick="location.href='carta.html'">
+        💌 ABRIR MI SORPRESA
+    </button>
 
 </div>
 
