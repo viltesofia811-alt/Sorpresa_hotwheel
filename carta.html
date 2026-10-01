@@ -4,68 +4,108 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Una carta para vos ❤️</title>
+<title>Para mi gordito ❤️</title>
 
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#090909;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0757a8;
     color:white;
-    text-align:center;
 }
 
 .contenedor{
     min-height:100vh;
+    padding:25px 14px 40px;
     display:flex;
     align-items:center;
     justify-content:center;
-    padding:25px;
+
+    background:
+        linear-gradient(45deg,#fff 25%,transparent 25%) 0 0/38px 38px,
+        linear-gradient(-45deg,#fff 25%,transparent 25%) 0 0/38px 38px,
+        linear-gradient(45deg,transparent 75%,#fff 75%) 0 0/38px 38px,
+        linear-gradient(-45deg,transparent 75%,#fff 75%) 0 0/38px 38px,
+        #111;
 }
 
 .carta{
-    max-width:500px;
-    padding:30px 22px;
-    background:linear-gradient(145deg,#250909,#111);
-    border:1px solid #5a2020;
-    border-radius:25px;
-    box-shadow:0 10px 40px #000;
+    width:min(100%,520px);
+    padding:28px 20px 25px;
+    background:linear-gradient(180deg,#0878d1,#034b91);
+    border:5px solid #ffd900;
+    border-radius:28px;
+    box-shadow:0 12px 35px #000;
+}
+
+.decoracion{
+    text-align:center;
+    font-size:28px;
+    letter-spacing:5px;
 }
 
 .corazon{
-    font-size:55px;
+    text-align:center;
+    font-size:58px;
+    margin:8px 0;
 }
 
 h1{
-    font-size:35px;
-    margin:15px 0;
+    text-align:center;
+    font-size:clamp(34px,10vw,48px);
+    margin:10px 0 22px;
+    color:#ffd900;
+    font-weight:1000;
+    text-shadow:
+        4px 4px 0 #0757a8,
+        6px 6px 0 #032e5c;
 }
 
 .texto{
     text-align:left;
     font-size:17px;
     line-height:1.7;
-    color:#eee;
+    color:white;
+}
+
+.texto p{
+    margin-bottom:18px;
+}
+
+.texto strong{
+    color:#ffd900;
+    font-size:19px;
 }
 
 .boton{
-    display:inline-block;
-    margin-top:25px;
-    padding:15px 25px;
-    border-radius:30px;
-    background:#d71920;
-    color:white;
+    display:block;
+    width:100%;
+    max-width:330px;
+    margin:25px auto 0;
+    padding:17px;
+    border-radius:999px;
+    background:#ffd900;
+    color:#0757a8;
     text-decoration:none;
-    font-weight:bold;
+    font-weight:1000;
+    font-size:17px;
+    border:3px solid white;
+    box-shadow:0 6px 0 #032e5c;
 }
 
 .volver{
     display:block;
-    margin-top:15px;
-    color:#aaa;
+    margin-top:20px;
+    color:white;
     text-decoration:none;
     font-size:14px;
+    text-align:center;
 }
+
 </style>
 </head>
 
@@ -75,26 +115,38 @@ h1{
 
 <div class="carta">
 
-<div class="corazon">❤️</div>
+<div class="decoracion">
+🏁 🏎️ 🏁
+</div>
 
-<h1>Una carta para vos</h1>
+<div class="corazon">
+💗
+</div>
+
+<h1>
+Gordito 💗
+</h1>
 
 <div class="texto">
 
 <p>
-<strong>ESCRIBÍ ACÁ TU PRIMER PÁRRAFO ❤️</strong>
+Quería hacerte algo especial porque, aunque estemos lejos, quería encontrar una manera de estar presente en este día.
 </p>
 
 <p>
-ESCRIBÍ ACÁ TODO LO QUE QUIERAS DECIRLE. PODÉS HABLAR DE LO MUCHO QUE LO QUERÉS, DE LA DISTANCIA Y DE LO ESPECIAL QUE ES PARA VOS.
+Capaz este regalo entra en una pantalla y no en tus manos, pero está hecho con muchísimo amor. Ojalá pronto pueda darte un regalo de verdad, abrazarte у darte muchos besosss.
 </p>
 
 <p>
-ESCRIBÍ ACÁ OTRO MENSAJE QUE QUIERAS DEDICARLE.
+Te amo mucho gordo nunca lo dudes y aunque estemos lejos siempre voy a buscar la manera de hacerte feliz.
 </p>
 
 <p>
-Y ACÁ PODÉS PONER UNA FRASE FINAL ESPECIAL PARA ÉL. ❤️
+Te amo con todo mi corazón espero que te guste, tambien quiero agradecerte todo lo que haces y siempre estuviste para mi.
+</p>
+
+<p>
+Te amo con todo mi corazon gracias por todo mi gordito 🫶🏼
 </p>
 
 </div>
@@ -104,7 +156,7 @@ Y ACÁ PODÉS PONER UNA FRASE FINAL ESPECIAL PARA ÉL. ❤️
 </a>
 
 <a class="volver" href="index.html">
-← Volver
+← Volver al inicio
 </a>
 
 </div>
