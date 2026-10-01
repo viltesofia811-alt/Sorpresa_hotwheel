@@ -7,80 +7,139 @@
 <title>Nuestros recuerdos ❤️</title>
 
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#090909;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0757a8;
     color:white;
-    text-align:center;
 }
 
 .contenedor{
     min-height:100vh;
-    padding:30px 18px;
+    padding:25px 14px 40px;
+
+    background:
+        linear-gradient(45deg,#fff 25%,transparent 25%) 0 0/38px 38px,
+        linear-gradient(-45deg,#fff 25%,transparent 25%) 0 0/38px 38px,
+        linear-gradient(45deg,transparent 75%,#fff 75%) 0 0/38px 38px,
+        linear-gradient(-45deg,transparent 75%,#fff 75%) 0 0/38px 38px,
+        #111;
 }
 
 .recuerdos{
-    max-width:500px;
+    width:100%;
+    max-width:520px;
     margin:auto;
 }
 
+.encabezado{
+    text-align:center;
+    background:linear-gradient(180deg,#0878d1,#034b91);
+    border:5px solid #ffd900;
+    border-radius:28px;
+    padding:25px 18px;
+    margin-bottom:20px;
+    box-shadow:0 8px 0 #032e5c;
+}
+
+.decoracion{
+    font-size:28px;
+    letter-spacing:5px;
+}
+
+.encabezado-icono{
+    font-size:58px;
+    margin:8px 0;
+}
+
 h1{
-    font-size:35px;
-    margin:10px 0;
+    font-size:clamp(36px,10vw,50px);
+    margin:8px 0;
+    color:#ffd900;
+    font-weight:1000;
+    text-shadow:
+        4px 4px 0 #0757a8,
+        6px 6px 0 #032e5c;
 }
 
 .subtitulo{
-    color:#ccc;
+    color:white;
     line-height:1.5;
-    margin-bottom:25px;
+    font-weight:600;
+    margin:10px auto 0;
 }
 
+/* CADA RECUERDO */
+
 .recuerdo{
-    background:#171717;
-    border:1px solid #3d2020;
-    border-radius:20px;
-    padding:15px;
-    margin-bottom:20px;
+    background:linear-gradient(180deg,#0878d1,#034b91);
+    border:5px solid #ffd900;
+    border-radius:25px;
+    padding:12px;
+    margin-bottom:22px;
+    box-shadow:0 8px 0 #032e5c;
 }
 
 .foto{
-    height:220px;
-    border-radius:15px;
-    background:#292929;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:55px;
+    width:100%;
+    background:#034b91;
+    border-radius:17px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.foto img{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:17px;
 }
 
 .recuerdo h2{
-    font-size:20px;
-    margin:15px 0 8px;
+    color:#ffd900;
+    font-size:21px;
+    margin:15px 5px 7px;
+    text-shadow:2px 2px 0 #0757a8;
 }
 
 .recuerdo p{
-    color:#ccc;
+    color:white;
     line-height:1.5;
+    margin:5px;
 }
 
+/* BOTÓN */
+
 .boton{
-    display:inline-block;
-    margin-top:15px;
-    padding:15px 25px;
-    border-radius:30px;
-    background:#d71920;
-    color:white;
+    display:block;
+    width:100%;
+    max-width:330px;
+    margin:25px auto 0;
+    padding:17px;
+    border-radius:999px;
+    background:#ffd900;
+    color:#0757a8;
     text-decoration:none;
-    font-weight:bold;
+    font-weight:1000;
+    font-size:17px;
+    text-align:center;
+    border:3px solid white;
+    box-shadow:0 6px 0 #032e5c;
 }
 
 .volver{
     display:block;
-    margin-top:15px;
-    color:#aaa;
+    margin-top:22px;
+    color:white;
     text-decoration:none;
+    text-align:center;
+    font-size:14px;
 }
+
 </style>
 </head>
 
@@ -90,55 +149,79 @@ h1{
 
 <div class="recuerdos">
 
-<div style="font-size:60px;">📸❤️</div>
+<div class="encabezado">
 
-<h1>Nuestros recuerdos</h1>
+<div class="decoracion">
+🏁 🏎️ 🏁
+</div>
+
+<div class="encabezado-icono">
+📸❤️
+</div>
+
+<h1>
+Nuestros recuerdos
+</h1>
 
 <p class="subtitulo">
-Algunos momentos que quiero guardar siempre conmigo.
-</p>
-
-
-<div class="recuerdo">
-
-<div class="foto">
-📷
-</div>
-
-<h2>ESCRIBÍ ACÁ EL TÍTULO</h2>
-
-<p>
-ESCRIBÍ ACÁ ALGO SOBRE ESTA FOTO O ESTE RECUERDO.
+Algunos momentos que quiero guardar siempre conmigo. 💗
 </p>
 
 </div>
 
 
+<!-- FOTO 1 -->
+
 <div class="recuerdo">
 
 <div class="foto">
-📷
+<img src="foto2.jpeg" alt="Nuestro recuerdo">
 </div>
 
-<h2>ESCRIBÍ ACÁ OTRO TÍTULO</h2>
+<h2>
+Un momento juntos ❤️
+</h2>
 
 <p>
-ESCRIBÍ ACÁ OTRO RECUERDO O MENSAJE.
+Un recuerdo que quiero guardar siempre conmigo.
 </p>
 
 </div>
 
 
+<!-- FOTO 2 -->
+
 <div class="recuerdo">
 
 <div class="foto">
-📷
+<img src="foto3.jpeg" alt="Nuestro recuerdo">
 </div>
 
-<h2>UN MOMENTO ESPECIAL</h2>
+<h2>
+Un recuerdo especial 💗
+</h2>
 
 <p>
-ESCRIBÍ ACÁ LO QUE QUIERAS DECIRLE.
+Porque cada momento con vos se vuelve especial.
+</p>
+
+</div>
+
+
+<!-- FOTO 3 -->
+
+<div class="recuerdo">
+
+<div class="foto">
+<img src="foto4.jpeg" alt="Nuestro recuerdo">
+</div>
+
+<h2>
+Siempre nosotros 🫶🏼
+</h2>
+
+<p>
+Momentos que espero poder seguir compartiendo con vos.
 </p>
 
 </div>
