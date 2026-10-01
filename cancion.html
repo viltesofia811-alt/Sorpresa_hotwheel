@@ -7,72 +7,103 @@
 <title>Una canción para vos ❤️</title>
 
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#090909;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0757a8;
     color:white;
-    text-align:center;
 }
 
 .contenedor{
     min-height:100vh;
+    padding:25px 14px 40px;
     display:flex;
     align-items:center;
     justify-content:center;
-    padding:25px;
+
+    background:
+        linear-gradient(45deg,#fff 25%,transparent 25%) 0 0/38px 38px,
+        linear-gradient(-45deg,#fff 25%,transparent 25%) 0 0/38px 38px,
+        linear-gradient(45deg,transparent 75%,#fff 75%) 0 0/38px 38px,
+        linear-gradient(-45deg,transparent 75%,#fff 75%) 0 0/38px 38px,
+        #111;
 }
 
 .cancion{
     width:100%;
-    max-width:500px;
-    padding:30px 22px;
-    background:linear-gradient(145deg,#250909,#111);
-    border:1px solid #5a2020;
-    border-radius:25px;
-    box-shadow:0 10px 40px #000;
+    max-width:520px;
+    padding:28px 20px;
+    background:linear-gradient(180deg,#0878d1,#034b91);
+    border:5px solid #ffd900;
+    border-radius:28px;
+    box-shadow:0 12px 35px #000;
+    text-align:center;
+}
+
+.decoracion{
+    font-size:28px;
+    letter-spacing:5px;
+    margin-bottom:8px;
 }
 
 .icono{
     font-size:65px;
+    margin:5px 0;
 }
 
 h1{
-    font-size:34px;
-    margin:15px 0;
-}
-
-.nombre{
-    font-size:20px;
-    color:#ff5555;
-    font-weight:bold;
-    margin:20px 0;
+    font-size:clamp(34px,10vw,48px);
+    margin:12px 0 20px;
+    color:#ffd900;
+    font-weight:1000;
+    text-shadow:
+        4px 4px 0 #0757a8,
+        6px 6px 0 #032e5c;
 }
 
 .mensaje{
     font-size:17px;
-    line-height:1.6;
-    color:#ddd;
+    line-height:1.65;
+    color:white;
+    font-weight:600;
+}
+
+.nombre{
+    font-size:21px;
+    color:#ffd900;
+    font-weight:1000;
+    margin:22px 0;
+    text-shadow:2px 2px 0 #032e5c;
 }
 
 .boton{
-    display:inline-block;
-    margin-top:25px;
-    padding:15px 25px;
-    border-radius:30px;
-    background:#d71920;
-    color:white;
+    display:block;
+    width:100%;
+    max-width:330px;
+    margin:15px auto 0;
+    padding:17px;
+    border-radius:999px;
+    background:#ffd900;
+    color:#0757a8;
     text-decoration:none;
-    font-weight:bold;
+    font-weight:1000;
+    font-size:16px;
+    border:3px solid white;
+    box-shadow:0 6px 0 #032e5c;
 }
 
 .volver{
     display:block;
-    margin-top:15px;
-    color:#aaa;
+    margin-top:22px;
+    color:white;
     text-decoration:none;
     font-size:14px;
 }
+
 </style>
 </head>
 
@@ -82,13 +113,20 @@ h1{
 
 <div class="cancion">
 
-<div class="icono">🎵❤️</div>
+<div class="decoracion">
+🏁 🏎️ 🏁
+</div>
 
-<h1>Una canción para vos</h1>
+<div class="icono">
+🎵❤️
+</div>
+
+<h1>
+Una canción para vos
+</h1>
 
 <p class="mensaje">
-Hay una canción que quería dedicarte especialmente.
-Cada vez que la escucho, pienso en vos. ❤️
+Elegi esta cancion por que me recuerda a vos y a cuando eramos unos nenes conociendonos 🥺
 </p>
 
 <div class="nombre">
@@ -101,9 +139,11 @@ href="https://www.youtube.com/watch?v=wAjHQXrIj9o"
 target="_blank">
 ▶️ ESCUCHAR LA CANCIÓN
 </a>
+
 <a class="boton" href="recuerdos.html">
 📸 SEGUIR
 </a>
+
 <a class="volver" href="carta.html">
 ← Volver a la carta
 </a>
